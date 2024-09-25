@@ -1,3 +1,12 @@
+openjpeg2 (2.4.0-6ubuntu0.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: resource consumption loop
+    - debian/patches/CVE-2023-39327.patch: when EPH markers are specified, 
+      they are required
+    - CVE-2023-39327
+
+ -- Bruce Cable <bruce.cable@canonical.com>  Wed, 25 Sep 2024 13:00:18 +1000
+
 openjpeg2 (2.4.0-6) unstable; urgency=medium
 
   * d/copyright: Remove lintian error duplicate-globbing-patterns

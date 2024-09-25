@@ -1,6 +1,7 @@
 Source: openjpeg2
 Priority: optional
-Maintainer: Debian PhotoTools Maintainers <pkg-phototools-devel@lists.alioth.debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian PhotoTools Maintainers <pkg-phototools-devel@lists.alioth.debian.org>
 Uploaders: Mathieu Malaterre <malat@debian.org>, Hugo Lefeuvre <hle@debian.org>
 Homepage: https://www.openjpeg.org
 Build-Depends: cmake (>= 2.8.2),
