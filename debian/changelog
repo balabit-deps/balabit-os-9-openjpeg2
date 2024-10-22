@@ -1,3 +1,21 @@
+openjpeg2 (2.4.0-6ubuntu0.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: heap buffer overflow
+    - debian/patches/CVE-2021-3575.patch: opj_decompress: fix off-by-one
+      read heap-buffer-overflow in sycc420_to_rgb() when x0 and y0 are odd
+    - CVE-2021-3575
+  * SECURITY UPDATE: integer overflow
+    - debian/patches/CVE-2021-29338.patch: Avoid overflow in
+      multiplications in utilities related to a big number of files in a
+      directory
+    - CVE-2021-29338
+  * SECURITY UPDATE: denial of service
+    - debian/patches/CVE-2022-1122.patch: Fix segfault in
+      src/bin/jp2/opj_decompress.c due to uninitialized pointer
+    - CVE-2022-1122
+
+ -- Bruce Cable <bruce.cable@canonical.com>  Tue, 22 Oct 2024 15:06:23 +1100
+
 openjpeg2 (2.4.0-6ubuntu0.1) jammy-security; urgency=medium
 
   * SECURITY UPDATE: resource consumption loop
