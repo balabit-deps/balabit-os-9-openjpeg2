@@ -1,3 +1,15 @@
+openjpeg2 (2.4.0-6ubuntu0.3) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Heap buffer overflow.
+    - debian/patches/CVE-2024-56826.patch: Add comp12w variable and
+      comparisons in src/bin/common/color.c.
+    - debian/patches/CVE-2024-56827.patch: Add l_current_tile_part comparison
+      to check again total number of tile parts in src/bin/openjp2/j2k.c.
+    - CVE-2024-56826
+    - CVE-2024-56827
+
+ -- Hlib Korzhynskyy <hlib.korzhynskyy@canonical.com>  Tue, 21 Jan 2025 12:13:22 -0330
+
 openjpeg2 (2.4.0-6ubuntu0.2) jammy-security; urgency=medium
 
   * SECURITY UPDATE: heap buffer overflow
