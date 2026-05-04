@@ -1,3 +1,13 @@
+openjpeg2 (2.4.0-6ubuntu0.5) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: heap overflow via insufficient memory allocation
+    - debian/patches/CVE-2026-6192.patch: opj_pi_initialise_encode() (write code
+      path): avoid potential integer overflow leading to insufficient memory
+      allocation in src/lib/openjp2/pi.c.
+    - CVE-2026-6192
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 04 May 2026 12:21:00 -0400
+
 openjpeg2 (2.4.0-6ubuntu0.4) jammy-security; urgency=medium
 
   * SECURITY UPDATE: null pointer dereference
